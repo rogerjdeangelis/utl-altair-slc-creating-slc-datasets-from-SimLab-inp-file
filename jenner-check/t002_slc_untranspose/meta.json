@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_slc_untranspose",
+  "source_file": "utl-altair-slc-creating-slc-datasets-from-SimLab-inp-file.sas",
+  "source_blob_sha": "208acae5c35dac6f283673a8475ed79883c4a6bb",
+  "source_commit": "9061bd2b4343d0ae801a6dcd3d08f778267f1a71",
+  "notes": "The repo's %slc_untranspose macro (macro lines 514-886, authors Tabachneck/Svolba/Matise/Kastin) kept verbatim and driven with a small self-contained wide 'sections' input in the same key+node1-node4 shape, using the repo's own invocation form %slc_untranspose(data=sections,out=want,by=key,var=node1-node4). Exercises the macro's CALL EXECUTE code generation, dictionary.columns lookups, PROC SQL and PROC SORT end to end; produces the long 'want' with 20 rows."
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_simlab_denormalise",
+  "source_file": "utl-altair-slc-creating-slc-datasets-from-SimLab-inp-file.sas",
+  "source_blob_sha": "208acae5c35dac6f283673a8475ed79883c4a6bb",
+  "source_commit": "9061bd2b4343d0ae801a6dcd3d08f778267f1a71",
+  "notes": "De-normalise step: reads a SimLab .inp file and parses each line into KEY + NODE1-NODE4 via scan()/input(...,e9.) with a '?? best12.' numeric-test. Kept verbatim; workx->work and the hardcoded d:/txt/sample1.inp infile rewritten to read the same sample inline via infile datalines. Produces sections with 10 obs, matching the repo's documented 'WORKX.SECTIONS total obs=10'."
+}
