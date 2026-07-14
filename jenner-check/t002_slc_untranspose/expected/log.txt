@@ -1,0 +1,75 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T061458Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA sections
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote sections (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA t_e_m_p
+
+
+NOTE: Wrote t_e_m_p (1 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable VARS = 'node1','node2','node3','node4'
+NOTE: Macro variable CHECK = (not missing(node1)) or (not missing(node2)) or (not missing(node3)) or (not missing(node4))
+NOTE: Macro variable ORDERED_VARS = 'node1','node2','node3','node4'
+NOTE: PROC SQL statement used.
+NOTE: DATA t_e_m_p
+
+
+NOTE: Read 1 rows from work.sections.
+NOTE: Wrote t_e_m_p (1 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table t_e_m_p created.
+NOTE: Macro variable MINTYPE = num
+NOTE: Macro variable MAXLENGTH = 8
+NOTE: PROC SQL statement used.
+NOTE: DATA t_e_m_p
+
+
+NOTE: Read 4 rows from t_e_m_p.
+NOTE: Wrote t_e_m_p (4 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=t_e_m_p
+
+NOTE: Read 4 rows from t_e_m_p.
+NOTE: Wrote t_e_m_p (4 rows, 9 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA _null_
+
+
+NOTE: Read 4 rows from t_e_m_p.
+NOTE: Wrote _null_ (4 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.want
+
+
+NOTE: Read 5 rows from work.sections.
+NOTE: Wrote work.want (20 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC DELETE datasets=work.t_e_m_p
+
+NOTE: Deleting WORK.T_E_M_P (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC PRINT data=want
+
+NOTE: PROC PRINT completed: 20 observations printed, 3 variables
